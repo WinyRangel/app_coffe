@@ -1,3 +1,4 @@
+import 'package:app_cafe/pages/details.dart';
 import 'package:app_cafe/widget/widget_support.dart';
 import 'package:flutter/material.dart';
 
@@ -57,27 +58,32 @@ class _HomeState extends State<Home> {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      child: Material(
-                        elevation: 5.0,
-                        borderRadius: BorderRadius.circular(20),
-                        child: Container(
-                          padding: EdgeInsets.all(14),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                                Image.asset("images/desayuno.png", 
-                                height: 150, 
-                                width: 150, 
-                                fit: BoxFit.cover, ),
-                                Text("Desayuno de la casa", style: AppWidget.semiBoldTextFeildStyle()),
-                                SizedBox(height: 5.0,),
-                                Text("Huevos, tosino y jugo de naranja", style: AppWidget.LightTextFeildldStyle()),
-                                SizedBox(height: 5.0,),
-                                Text("\$25", style: AppWidget.semiBoldTextFeildStyle())
-                            ],
-                          )
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Details()));
+                      },
+                      child: Container(
+                        margin: EdgeInsets.all(5),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            padding: EdgeInsets.all(14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                  Image.asset("images/desayuno.png", 
+                                  height: 150, 
+                                  width: 150, 
+                                  fit: BoxFit.cover, ),
+                                  Text("Desayuno de la casa", style: AppWidget.semiBoldTextFeildStyle()),
+                                  SizedBox(height: 5.0,),
+                                  Text("Huevos, tosino y jugo de naranja", style: AppWidget.LightTextFeildldStyle()),
+                                  SizedBox(height: 5.0,),
+                                  Text("\$25", style: AppWidget.semiBoldTextFeildStyle())
+                              ],
+                            )
+                          ),
                         ),
                       ),
                     ), 

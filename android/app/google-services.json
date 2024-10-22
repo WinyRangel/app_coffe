@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534284579707",
+    "project_id": "poritacoffe-9bb1e",
+    "storage_bucket": "poritacoffe-9bb1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534284579707:android:a268d0feee0100292c83de",
+        "android_client_info": {
+          "package_name": "com.example.app_cafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIk4IJ6MdVS75lH6uxrn9A_31nr43yVlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

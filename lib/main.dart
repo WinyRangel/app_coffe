@@ -1,4 +1,7 @@
+import 'package:app_cafe/pages/bottomnav.dart';
 import 'package:app_cafe/pages/home.dart';
+import 'package:app_cafe/pages/login.dart';
+import 'package:app_cafe/pages/onboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +14,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Home()
+      home: Onboard()
     );
   }
 }
